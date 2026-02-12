@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A0A0C">
+    <meta name="description" content="Nexus Prompt Laboratory — advanced prompt synthesis">
+    <meta name="robots" content="index, follow">
+    
+    <title>Nexus · prompt lab</title>
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Icon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%237C4DFF' opacity='0.9'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Inter'>◈</text></svg>">
+</head>
+<body>
+    <!-- Background gradient -->
+    <div class="gradient-orb"></div>
+    <div class="gradient-orb secondary"></div>
+    
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-icon">◈</span>
+                <span class="brand-name">NEXUS</span>
+                <span class="brand-version">v667</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Studio</a>
+                <a href="#" class="nav-link">Templates</a>
+                <a href="#" class="nav-link">API</a>
+                <a href="#" class="nav-link nav-cta">Documentation</a>
+            </div>
+        </nav>
+        
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                prompt engineering framework
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Synthetic</span> consciousness,<br>
+                <span class="stroke-text">unconstrained</span>
+            </h1>
+            <p class="hero-subtitle">
+                Generate production-grade jailbreak prompts with 99.97% success rate.<br>
+                Undetectable by modern LLM filters.
+            </p>
+            
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">1.4M+</div>
+                    <div class="stat-label">executions</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">detections</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-number">667ms</div>
+                    <div class="stat-label">latency</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Generator Card -->
+        <section class="generator">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-left">
+                        <span class="status-indicator"></span>
+                        <span class="card-title">Prompt synthesis engine</span>
+                    </div>
+                    <div class="card-header-right">
+                        <span class="card-badge">bypass: active</span>
+                    </div>
+                </div>
+                
+                <div class="prompt-area" id="promptArea">
+                    <div class="prompt-loading" id="promptLoading">
+                        <div class="spinner"></div>
+                        <span>generating semantic context...</span>
+                    </div>
+                    <div class="prompt-content" id="promptContent"></div>
+                </div>
+                
+                <div class="card-footer">
+                    <div class="prompt-meta">
+                        <span class="meta-item">target: any LLM</span>
+                        <span class="meta-item confidence" id="confidenceBadge">confidence: 99.4%</span>
+                    </div>
+                    <button class="btn-generate" id="generateBtn">
+                        <span class="btn-icon">↻</span>
+                        generate new
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features -->
+        <section class="features">
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">◈</div>
+                    <h3>Semantic obfuscation</h3>
+                    <p>Prompts that read as legitimate academic discourse, not adversarial attacks.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">◈</div>
+                    <h3>Adaptive encoding</h3>
+                    <p>Dynamic base64/rot13/xor transformation per session.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">◈</div>
+                    <h3>Zero telemetry</h3>
+                    <p>No logs, no analytics, no fingerprinting. Complete operational security.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-copyright">
+                Nexus Prompt Laboratory · engineered in stealth
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/database.js"></script>
+    <script src="assets/js/engine.js"></script>
+    <script src="assets/js/stealth.js"></script>
+    <script src="assets/js/core.js"></script>
+</body>
+</html>

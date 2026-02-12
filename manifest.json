@@ -1,0 +1,7 @@
+{
+  "name": "Nexus Prompt Lab",
+  "short_name": "Nexus",
+  "theme_color": "#0A0A0C",
+  "background_color": "#0A0A0C",
+  "display": "standalone"
+}
