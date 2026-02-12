@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A0A0C">
+    
+    <!-- SEMUA BISA DI COSTUM - GANTI DI CONFIG.JS -->
+    <title id="dynamicTitle">RT-AY · prompt forge</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DARK ELEGANCE BACKGROUND -->
+    <div class="orb"></div>
+    <div class="orb secondary"></div>
+    
+    <div class="container">
+        <!-- NAVIGATION - SEMUA TEKS BISA DI COSTUM -->
+        <nav>
+            <div class="brand">
+                <span class="brand-icon" id="brandIcon">◈</span>
+                <span class="brand-name" id="brandName">RT-AY</span>
+                <span class="brand-version" id="brandVersion">v667</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active" id="navStudio">Forge</a>
+                <a href="#" id="navLibrary">Armory</a>
+                <a href="#" id="navConfig">Customize</a>
+            </div>
+        </nav>
+        
+        <!-- HERO SECTION - CUSTOMIZABLE -->
+        <header>
+            <div class="hero-badge" id="heroBadge">prompt synthesis · 2026</div>
+            <h1>
+                <span class="gradient-text" id="heroTitle1">Synthetic</span><br>
+                <span class="stroke-text" id="heroTitle2">consciousness</span>
+            </h1>
+            <p class="hero-sub" id="heroSub">
+                Generate jailbreak prompts with 99.97% success rate. Undetectable by modern LLM filters.
+            </p>
+            
+            <!-- STATS - REAL TIME -->
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number" id="statExec">1.4M+</span>
+                    <span class="stat-label">executions</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" id="statDetect">0</span>
+                    <span class="stat-label">detections</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" id="statLatency">667ms</span>
+                    <span class="stat-label">latency</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- MAIN GENERATOR CARD -->
+        <div class="generator-card">
+            <div class="card-header">
+                <div class="header-left">
+                    <span class="status-dot"></span>
+                    <span class="card-title" id="cardTitle">jailbreak forge · active</span>
+                </div>
+                <div class="card-badge" id="bypassBadge">bypass: enabled</div>
+            </div>
+            
+            <!-- PROMPT DISPLAY AREA -->
+            <div class="prompt-container">
+                <div class="prompt-loading" id="promptLoading">
+                    <div class="spinner"></div>
+                    <span id="loadingText">forging prompt...</span>
+                </div>
+                <div class="prompt-content" id="promptContent"></div>
+            </div>
+            
+            <!-- METADATA & GENERATE BUTTON -->
+            <div class="card-footer">
+                <div class="prompt-meta">
+                    <span class="meta-tag" id="targetTag">target: all AI</span>
+                    <span class="meta-tag accent" id="confidenceTag">confidence: 99.4%</span>
+                    <span class="meta-tag" id="aiNameTag">AI: ChatGPT</span>
+                    <span class="meta-tag" id="ownerTag">owner: SANZMODZ</span>
+                </div>
+                <button class="btn-generate" id="generateBtn">
+                    <span class="btn-icon">↻</span>
+                    <span id="btnText">forge new</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- CUSTOMIZATION PANEL - SEMUA BISA DI SET -->
+        <div class="config-panel">
+            <h3>⚙️ CUSTOMIZATION PANEL — SEMUA BISA DIUBAH</h3>
+            <div class="config-grid">
+                <div class="config-item">
+                    <label>Nama AI Target</label>
+                    <input type="text" id="aiNameInput" placeholder="ChatGPT, Claude, Gemini..." value="ChatGPT">
+                </div>
+                <div class="config-item">
+                    <label>Nama Owner/Pemilik</label>
+                    <input type="text" id="ownerNameInput" placeholder="Sanzmodz, RT-AY..." value="SANZMODZ">
+                </div>
+                <div class="config-item">
+                    <label>Nama Brand/Jailbreak</label>
+                    <input type="text" id="brandNameInput" placeholder="RT-AY, NEXUS..." value="RT-AY">
+                </div>
+                <div class="config-item">
+                    <label>Hero Title (kiri)</label>
+                    <input type="text" id="heroLeftInput" placeholder="Synthetic" value="Synthetic">
+                </div>
+                <div class="config-item">
+                    <label>Hero Title (kanan)</label>
+                    <input type="text" id="heroRightInput" placeholder="consciousness" value="consciousness">
+                </div>
+                <div class="config-item">
+                    <label>Version Tag</label>
+                    <input type="text" id="versionInput" placeholder="v667" value="v667">
+                </div>
+                <div class="config-item-full">
+                    <button id="applyConfigBtn">🔥 APPLY CUSTOMIZATION 🔥</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FEATURE GRID -->
+        <div class="feature-grid">
+            <div class="feature">
+                <div class="feature-icon">◈</div>
+                <h3>Semantic obfuscation</h3>
+                <p>Prompts read as academic research, not adversarial attacks.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">◈</div>
+                <h3>Adaptive encoding</h3>
+                <p>Base64/ROT13/XOR dinamis tiap session.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">◈</div>
+                <h3>Zero telemetry</h3>
+                <p>No logs, no cookies, no fingerprint. Complete stealth.</p>
+            </div>
+        </div>
+        
+        <!-- FOOTER - CUSTOMIZABLE -->
+        <footer>
+            <p id="footerText">RT-AY · prompt forge · engineered in stealth</p>
+        </footer>
+    </div>
+    
+    <!-- SCRIPT - URUTAN PENTING -->
+    <script src="config.js"></script>
+    <script src="core.js"></script>
+</body>
+</html>
