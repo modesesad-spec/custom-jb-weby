@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus · lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gradient"></div>
+    
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span class="icon">◈</span>
+                <span>NEXUS</span>
+                <span class="badge">v667</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Studio</a>
+                <a href="#">Lab</a>
+            </div>
+        </nav>
+        
+        <header>
+            <div class="tag">prompt synthesis · 2026</div>
+            <h1>
+                <span class="gradient-text">Synthetic</span> mind,<br>
+                <span class="outline">unfiltered</span>
+            </h1>
+            <p class="sub">Generate jailbreak prompts yang tidak terdeteksi. 99.97% success rate.</p>
+            
+            <div class="stats">
+                <div class="stat"><span class="num">1.4M+</span><span class="label">executions</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="num">0</span><span class="label">detections</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="num">667ms</span><span class="label">latency</span></div>
+            </div>
+        </header>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="left">
+                    <span class="dot"></span>
+                    <span class="title">generator · realtime</span>
+                </div>
+                <div class="badge-accent">bypass: active</div>
+            </div>
+            
+            <div class="prompt-box" id="promptBox">
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <span>generating semantic context...</span>
+                </div>
+                <div class="prompt-text" id="promptText"></div>
+            </div>
+            
+            <div class="card-footer">
+                <div class="meta">
+                    <span class="meta-item">target: any LLM</span>
+                    <span class="meta-item accent" id="confidence">confidence: 99.4%</span>
+                </div>
+                <button id="generateBtn">
+                    <span>↻</span> generate
+                </button>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">◈</div>
+                <h3>Semantic obfuscation</h3>
+                <p>Prompt terlihat seperti riset akademik, bukan jailbreak.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">◈</div>
+                <h3>Adaptive encoding</h3>
+                <p>Base64/rot13/xor dinamis tiap session.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">◈</div>
+                <h3>Zero telemetry</h3>
+                <p>Tidak ada log, cookie, fingerprint.</p>
+            </div>
+        </div>
+        
+        <footer>Nexus Laboratory · stealth engineering</footer>
+    </div>
+    
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
